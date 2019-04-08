@@ -20,7 +20,8 @@ class NumberPhoneController extends CI_Controller {
 		$this->load->model('NumberPhoneModel');
 		if ($this->NumberPhoneModel->insertNew($number, $price)) {
 			echo "insert ok";
-			$this->load->view('AddNumberPhoneSuccess');
+			// $this->load->view('AddNumberPhoneSuccess');
+
 		}else{
 			echo "insert failed";
 		}
