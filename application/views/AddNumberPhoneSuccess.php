@@ -11,7 +11,10 @@
 		<link rel="stylesheet" href="<?php echo base_url(); ?>vendor/font-awesome.css">
 	 	<link rel="stylesheet" href="<?php echo base_url(); ?>1.css">
 	</head>
+	
 	<body>
+	<?php require('Header_numberphone.php') ?>
+
 		<div class="container-center">
 			<h1>Add successed!</h1>
 		</div>

@@ -13,6 +13,9 @@
 	 	<link rel="stylesheet" href="<?php echo base_url(); ?>1.css">
 	</head>
 	<body>
+
+		<?php require('Header_numberphone.php') ?>
+
 		<div class="container-center">
 			<h1>Hello, world!</h1>
 		</div>

@@ -13,9 +13,7 @@
 	 	<link rel="stylesheet" href="<?php echo base_url(); ?>1.css">
 	</head>
 	<body>
-		<div class="container-center">
-			<h1>List number phones!</h1>
-		</div>
+		<?php require('Header_numberphone.php') ?>
 
 		<div class="container">
 			<div class="row">
