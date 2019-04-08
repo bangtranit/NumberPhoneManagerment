@@ -23,8 +23,24 @@ class NumberPhoneModel extends CI_Model {
 		$numberphones = $this->db->get('numberphone');
 		$numberphones = $numberphones->result_array();// dua ket qua thanh 1 array data
 		return $numberphones;
-		// echo "<pre>";
-		// var_dump($numberphones);
+	}
+
+	public function getDetailNumberSimbyID($id)
+	{
+		$this->db->select('*');
+		$this->db->where('id', $id);
+		$numberPhone = $this->db->get('numberphone');
+		$numberPhone = $numberPhone->result_array();
+		return $numberPhone;
+	}
+
+	public function editNumberPhone($id, $number, $price)
+	{
+		 $updateObject = array('id' => $id,
+		 						'number'=> $number,
+		 						'price'=> $price );
+		$this->db->where('id', $id);
+		return $this->db->update('numberphone', $updateObject);
 	}
 
 	public function deleteNumberPhoneByID($id)

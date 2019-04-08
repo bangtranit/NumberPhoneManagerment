@@ -17,22 +17,21 @@
 		<?php require('Header_numberphone.php') ?>
 
 		<div class="container-center">
-			<h1>Hello, world!</h1>
+			<h1>Add new!</h1>
 		</div>
 
 		<div class="div col-sm-8 push-sm-2">
 			<div class="form-group">
 			<form action="NumberPhoneController/addNewNumberPhone" method="post" enctype="multipart/form-data">
 			  <div class="form-group">
-			    <label for="exampleInputEmail1">Email address</label>
+			    <label for="exampleInputEmail1">number phone</label>
 			    <input name ="number" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-			    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 			  </div>
 			  <div class="form-group">
-			    <label for="exampleInputPassword1">Password</label>
+			    <label for="exampleInputPassword1">price</label>
 			    <input name = "price" type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">
 			  </div>
-			  <button type="submit" class="btn btn-primary">Submit</button>
+			  <button type="submit" class="btn btn-primary">Add</button>
 			</form>
 			
 		</div>

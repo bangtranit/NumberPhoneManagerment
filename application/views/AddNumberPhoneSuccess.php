@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="<?php echo base_url(); ?>vendor/font-awesome.css">
 	 	<link rel="stylesheet" href="<?php echo base_url(); ?>1.css">
 	</head>
-	
+
 	<body>
 	<?php require('Header_numberphone.php') ?>
 
@@ -20,7 +20,6 @@
 		</div>
 		<div class="row">
 			<button type="button" class="btn btn-outline-primary" onclick="history.go(-1)">Back</button>
-
 		</div>
 	</body>
 </html>

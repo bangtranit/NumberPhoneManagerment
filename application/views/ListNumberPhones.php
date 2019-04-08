@@ -24,6 +24,7 @@
 							<p class="number">Price <?php echo $value['price'] ?></p>
 							<p class="number">ID <?php echo $value['id'] ?></p>
 							<a href="ListNumberPhoneController/delete/<?= $value['id'] ?>">Delete</a>
+							<a href="NumberPhoneController/detailNumberPhone/<?= $value['id'] ?>">Edit</a>
 
 							<!-- <button type="submit" id="button1" name="button1" formaction='@Url.Action("delete", "ListNumberPhoneController")'>Delete</button> -->
 

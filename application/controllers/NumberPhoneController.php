@@ -27,11 +27,25 @@ class NumberPhoneController extends CI_Controller {
 		}
 	}
 
-	public function redirectPreviousPage()
+	public function detailNumberPhone($id)
 	{
-		
+		$this->load->model('NumberPhoneModel');
+		$data = array('detail' => $this->NumberPhoneModel->getDetailNumberSimbyID($id));
+		$this->load->view('EditNumberPhone', $data);
 	}
 
+	public function editNumberPhone()
+	{
+		$id = $this->input->post('id');
+		$number = $this->input->post('number');
+		$price = $this->input->post('price');
+		$this->load->model('NumberPhoneModel');
+		if ($this->NumberPhoneModel->editNumberPhone($id, $number, $price)) {
+			echo "ok";
+		}else{
+			echo "failed";
+		}
+	}
 }
 
 /* End of file TestController.php */
